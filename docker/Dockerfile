@@ -53,8 +53,8 @@ RUN wget https://github.com/Livox-SDK/livox_ros_driver/archive/refs/tags/v2.6.0.
     rm -rf v2.6.0.tar.gz
 
 # Copy source code and catkin_make workspace
-COPY LiDAR_IMU_Init /home/catkin_ws/src/LiDAR_IMU_Init
-RUN /bin/bash -c '. /opt/ros/$ROS_DISTRO/setup.bash; catkin_init_workspace; cd .. && catkin_make'
+# COPY LiDAR_IMU_Init /home/catkin_ws/src/LiDAR_IMU_Init
+# RUN /bin/bash -c '. /opt/ros/$ROS_DISTRO/setup.bash; catkin_init_workspace; cd .. && catkin_make'
 
 # Load ROS environment at each run
 COPY LiDAR_IMU_Init/docker/ros_entrypoint.sh /

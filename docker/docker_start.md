@@ -109,3 +109,4 @@ Creat container
 ```
 $ docker run --rm --privileged -it --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw --net=host --ipc=host --shm-size=1gb --name LidarImuInit --env="DISPLAY=$DISPLAY" lidarimuinit /bin/bash
 ```
+$ docker run --rm --privileged -it --volume=./LiDAR_IMU_Init:/home/catkin_ws/src/LiDAR_IMU_Init --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw --net=host --ipc=host --shm-size=1gb --name LidarImuInit --env="DISPLAY=$DISPLAY" lidarimuinit /bin/bash

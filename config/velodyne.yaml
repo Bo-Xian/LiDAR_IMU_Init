@@ -1,6 +1,6 @@
 common:
     lid_topic:  "/velodyne_points"
-    imu_topic:  "/imu/data"
+    imu_topic:  "/IMU_data"
 
 preprocess:
     lidar_type: 2                # Velodyne LiDAR
@@ -9,8 +9,8 @@ preprocess:
     feature_extract_en: false
 
 initialization:
-    cut_frame_num: 4 # must be positive integer
-    orig_odom_freq: 10
+    cut_frame_num: 2 # must be positive integer
+    orig_odom_freq: 20
     mean_acc_norm: 9.81 # 1: for livox built-in IMU
     online_refine_time: 15.0
     data_accum_length: 800
